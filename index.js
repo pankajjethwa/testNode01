@@ -14,7 +14,7 @@ app.get('/',function(req,res){
     //res.write
     //res.json(blocks);
 });
-
-app.listen(7000,function(){
+var port = process.env.port||8000;
+app.listen(port,function(){
     console.log('Listening on port 7000');
 });
